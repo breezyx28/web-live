@@ -3,8 +3,9 @@ const socket = io("/"); // listen to socket from root path "server.js"
 // const connectToNewUser = require("./stream");
 const videoGrid = document.getElementById("video-grid"); // mention video element
 const myPeer = new Peer("123", {
-  host: "http://65.109.143.203:3030",
+  host: "http://65.109.143.203",
   port: "3031",
+  secure: false,
 }); // peer allow us to genarate user id instead of hard coded id --- undefined will force peer to genarate an ID for us
 const myVideo = document.createElement("video"); // create video element
 myVideo.muted = true; // MUTE our video
