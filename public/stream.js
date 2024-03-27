@@ -3,7 +3,7 @@ const video = document.getElementById("video"); // mention video element
 
 const myPeer = new Peer("abc", {
   host: "/",
-  port: "3001",
+  port: "3031",
 }); // peer allow us to genarate user id instead of hard coded id --- undefined will force peer to genarate an ID for us
 
 navigator.mediaDevices
