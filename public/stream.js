@@ -18,7 +18,8 @@ navigator.mediaDevices
     call.on("stream", (remoteStream) => {
       addStreamerVideoStream(remoteStream);
     });
-  });
+  })
+  .catch((e) => console.log("stream-error: ", e));
 
 // video stream handler
 function addStreamerVideoStream(stream) {

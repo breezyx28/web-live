@@ -17,6 +17,7 @@ video.src = URL.createObjectURL(mediaSource);
         );
         resolve(sourceBuffer);
       } catch (e) {
+        console.log("live-error: ", e);
         reject(e);
       }
     };

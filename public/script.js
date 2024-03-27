@@ -13,7 +13,7 @@ myVideo.muted = true; // MUTE our video
 var conn = myPeer.connect("breezy");
 
 myPeer.on("error", (err) => {
-  console.log(err);
+  console.log("room-error: ", err);
 });
 
 myPeer.on("call", (call) => {
