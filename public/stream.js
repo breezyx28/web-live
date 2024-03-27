@@ -2,7 +2,7 @@ const socket = io("/"); // listen to socket from root path "server.js"
 const video = document.getElementById("video"); // mention video element
 
 const myPeer = new Peer("abc", {
-  host: "http://65.109.143.203",
+  host: "/",
   port: "3031",
   secure: false,
 }); // peer allow us to genarate user id instead of hard coded id --- undefined will force peer to genarate an ID for us
