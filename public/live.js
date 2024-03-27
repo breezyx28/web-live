@@ -1,5 +1,7 @@
 const socket = io("/"); // listen to socket from root path "server.js"
 
+console.log("live-page:", true);
+
 const video = document.getElementById("video"); // mention video element
 
 const mimeCodec = 'video/mp4; codecs="avc1.42E01E, mp4a.40.2"';
